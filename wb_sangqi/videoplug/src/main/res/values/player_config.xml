@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PlayerAttr">
+        <!-- 屏幕中间快退时图片 -->
+        <attr name="fast_forward_img" format="reference" />
+        <!-- 状态条快退时图片 -->
+        <attr name="fast_forward_icon" format="reference" />
+        <!-- 屏幕中间快进时图片 -->
+        <attr name="rewind_img" format="reference" />
+        <!-- 状态条快进时图片 -->
+        <attr name="rewind_icon" format="reference" />
+        <!-- 屏幕中间播放时图片 -->
+        <attr name="play_img" format="reference" />
+        <!-- 状态条播放时图片 -->
+        <attr name="play_icon" format="reference" />
+        <!-- 屏幕中间暂停时图片 -->
+        <attr name="pause_img" format="reference" />
+        <!-- 状态条暂停时图片 -->
+        <attr name="pause_icon" format="reference" />
+    </declare-styleable>
+
+    <!-- 播放器下方状态条ID -->
+    <item name="player_status_bar" type="id" />
+    <!-- 播放器下方状态条,播放/暂停按钮 -->
+    <item name="player_status_icon" type="id" />
+    <!-- 播放器中间,播放/暂停或快进/快退按钮 -->
+    <item name="player_status_img" type="id" />
+    <!-- 播放器下方状态条,快退按钮的布局 -->
+    <item name="player_rewind_icon" type="id" />
+    <!-- 播放器下方状态条,快进按钮的布局 -->
+    <item name="player_fast_forward_icon" type="id" />
+    <!-- 播放器进度条 -->
+    <item name="player_progress" type="id" />
+    <!-- 播放器启始时间 -->
+    <item name="player_start_time" type="id" />
+    <!-- 播放器当前播放时间 -->
+    <item name="player_current_time" type="id" />
+    <!-- 播放器总播放时间 -->
+    <item name="player_total_time" type="id" />
+    <!-- 播放器音量条 -->
+    <item name="player_volume_bar" type="id" />
+    <!-- 播放器音量条视图View,包括加、减与音量进度条 -->
+    <item name="player_volume_view" type="id" />
+    <!--静音图标-->
+    <item name="player_mute_icon" type="id" />
+    <!--加载进度图显示-->
+    <item name="player_loading" type="id" />
+
+</resources>

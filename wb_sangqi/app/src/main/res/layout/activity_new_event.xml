@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_60dp"
+        android:layout_marginTop="@dimen/dimen_60dp"
+        android:text="最新活动 "
+        android:textColor="#b3add5"
+        android:textSize="@dimen/txtsize_42sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_toRightOf="@+id/textView"
+        android:textColor="#dddddd"
+        android:textSize="@dimen/txtsize_32sp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:id="@+id/ll_new_event"
+        android:visibility="invisible"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_50dp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_20dp"
+        >
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="按"
+          android:textColor="#8680a3"
+          android:textSize="20sp"
+          />
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/shape_up_next"
+          android:gravity="center"
+          android:text="上页"
+          android:textColor="#8680a3"
+          android:textSize="19sp"
+          />
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:layout_weight="1"
+          android:background="@drawable/shape_up_next"
+          android:gravity="center"
+          android:text="下页"
+          android:textColor="#8680a3"
+          android:textSize="19sp"
+          />
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="翻页"
+          android:textColor="#8680a3"
+          android:textSize="20sp"
+          />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/new_event_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        >
+    </android.support.v4.view.ViewPager>
+    <ImageView
+        android:layout_below="@+id/textView"
+        android:visibility="invisible"
+        android:id="@+id/iv_await"
+        android:layout_margin="@dimen/dimen_150dp"
+        android:background="@mipmap/icon_await"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+  </RelativeLayout>
+
+
+</layout>

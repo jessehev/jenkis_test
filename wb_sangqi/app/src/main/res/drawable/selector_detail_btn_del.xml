@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:drawable="@mipmap/icon_del_def" android:state_focused="false"/>
+  <item android:drawable="@mipmap/icon_del_focused" android:state_focused="true"/>
+</selector>
+    <!--<item android:drawable="@drawable/button_download_pressed" android:state_focused="true" android:state_pressed="true"/>-->

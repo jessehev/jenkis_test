@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+  <TextView
+      android:id="@+id/award_nums"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:background="@mipmap/icon_lable_01"
+      android:gravity="center"
+      android:text="%s天\n奖励\n"
+      android:textColor="#fffb8c"
+      android:textSize="@dimen/txtsize_24sp"
+      android:textStyle="bold"
+      />
+
+  <RelativeLayout
+      android:id="@+id/award_layout"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/line"
+      android:layout_centerHorizontal="true"
+      android:layout_marginLeft="@dimen/dimen_7dp"
+      android:layout_marginRight="@dimen/dimen_7dp"
+      android:layout_marginTop="@dimen/dimen_24dp"
+      android:background="@drawable/icon_img_bg_n"
+      >
+
+    <ImageView
+        android:id="@+id/award_icon"
+        android:layout_width="@dimen/dimen_160dp"
+        android:layout_height="@dimen/dimen_120dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/award_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/award_icon"
+        android:layout_centerHorizontal="true"
+        android:text="游戏激活码"
+        android:gravity="center"
+        android:textColor="#fffa8c"
+        android:textSize="@dimen/txtsize_28sp"
+        />
+
+  </RelativeLayout>
+
+  <ImageView
+      android:id="@+id/item_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@id/award_layout"
+      android:layout_alignLeft="@id/award_layout"
+      android:layout_alignRight="@id/award_layout"
+      android:layout_alignTop="@id/award_layout"
+      android:layout_centerHorizontal="true"
+      android:background="@drawable/icon_img_bg_s"
+      android:visibility="gone"
+      />
+  <ImageView
+      android:id="@+id/line"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/icon_sign_point_line"
+      android:layout_below="@+id/award_nums"
+      android:layout_alignParentStart="true"
+      />
+
+</RelativeLayout>

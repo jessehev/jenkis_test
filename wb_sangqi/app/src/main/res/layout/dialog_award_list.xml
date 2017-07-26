@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <android.support.v17.leanback.widget.VerticalGridView
+      android:id="@+id/dialog_award_grid"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_marginBottom="@dimen/dimen_80dp"
+      android:layout_marginLeft="@dimen/dimen_180dp"
+      android:layout_marginRight="@dimen/dimen_20dp"
+      android:layout_marginTop="@dimen/dimen_200dp"
+      android:clipChildren="false"
+      android:clipToPadding="false"
+      app:numberOfColumns="3"
+      />
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimen_8dp"
+    android:orientation="vertical"
+    >
+
+  <RelativeLayout
+      android:id="@+id/content"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/game_name"
+      android:padding="@dimen/dimen_15dp"
+      >
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/game_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/floor_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:riv_corner_radius_bottom_left="@dimen/dimen_15dp"
+        app:riv_corner_radius_bottom_right="@dimen/dimen_15dp"
+        />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:text="已安装"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txtsize_32sp"
+        android:visibility="gone"
+        />
+
+    <View
+        android:id="@+id/mask_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66111111"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/icon_pause"
+        android:visibility="gone"
+        />
+
+    <com.ut.wb.ui.progress.RoundProgressBarWidthNumber
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:max="100"
+        android:visibility="gone"
+        app:progress_text_size="@dimen/txtsize_23sp"
+        app:progress_reached_bar_height="@dimen/dimen_15dp"
+        app:progress_reached_color="#64E664"
+        app:progress_unreached_bar_height="@dimen/dimen_15dp"
+        app:progress_unreached_color="#30ffffff"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_40dp"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/hot_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        />
+
+    <View
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:id="@+id/has_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/icon_apk_has_update"
+        android:visibility="gone"
+        />
+  </RelativeLayout>
+
+  <CheckBox
+      android:id="@+id/check"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/content"
+      android:layout_alignRight="@+id/content"
+      android:button="@drawable/selector_my_game_check"
+      android:visibility="gone"
+      />
+
+  <com.ut.wb.ui.MarqueTextView
+      android:id="@+id/game_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="@dimen/dimen_30dp"
+      android:layout_marginTop="@dimen/dimen_30dp"
+      android:maxEms="8"
+      android:text="套餐包名"
+      android:textColor="@android:color/white"
+      android:textSize="@dimen/txtsize_32sp"
+      />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+  <solid android:color="@android:color/transparent"/>
+  <stroke
+      android:color="@android:color/white"
+      android:width="@dimen/dimen_4dp"/>
+  <corners android:radius="@dimen/dimen_12dp"/>
+</shape>
+
+
+    <!--阴影-->
+    <!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<item-->
+    <!--android:left="@dimen/dimen_2dp"-->
+    <!--android:top="@dimen/dimen_2dp">-->
+    <!--<shape android:shape="rectangle">-->
+
+    <!--<gradient-->
+    <!--android:angle="270"-->
+    <!--android:endColor="#99000000"-->
+    <!--android:startColor="#32000000"/>-->
+
+    <!--<corners android:radius="@dimen/dimen_12dp"/>-->
+    <!--</shape>-->
+    <!--</item>-->
+
+    <!--<item-->
+    <!--android:bottom="@dimen/dimen_5dp"-->
+    <!--android:right="@dimen/dimen_4dp">-->
+
+    <!--<shape android:shape="rectangle">-->
+    <!--<solid android:color="@android:color/transparent"/>-->
+    <!--<stroke-->
+    <!--android:color="@android:color/white"-->
+    <!--android:width="@dimen/dimen_5dp"/>-->
+    <!--<corners android:radius="@dimen/dimen_12dp"/>-->
+    <!--</shape>-->
+
+    <!--</item>-->
+
+
+    <!--</layer-list>-->

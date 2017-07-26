@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <data>
+    <variable
+        name="typeName"
+        type="String"
+        />
+    <variable
+        name="position"
+        type="String"
+        />
+    <variable
+        name="btName"
+        type="String"
+        />
+  </data>
+
+  <RelativeLayout
+      android:id="@+id/root"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_80dp"
+        android:layout_marginRight="@dimen/dimen_80dp"
+        android:layout_marginTop="@dimen/dimen_60dp"
+        >
+
+      <TextView
+          android:id="@+id/hint"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:text="我的游戏-"
+          android:textColor="#B3ADD5"
+          android:textSize="@dimen/txtsize_38sp"
+          />
+
+      <TextView
+          android:id="@+id/type_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@+id/hint"
+          android:text="@{typeName}"
+          android:textColor="@color/white"
+          android:textSize="@dimen/txtsize_48sp"
+          android:textStyle="bold"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/type_name"
+          android:layout_marginLeft="@dimen/dimen_10dp"
+          android:layout_toRightOf="@+id/type_name"
+          android:text="@{position}"
+          android:textColor="@color/white"
+          android:textSize="@dimen/txtsize_30sp"
+          android:textStyle="bold"
+          />
+
+      <Button
+          android:id="@+id/del"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/dimen_70dp"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:background="@drawable/selector_my_gametail_btn_del"
+          android:paddingLeft="@dimen/dimen_20dp"
+          android:paddingRight="@dimen/dimen_20dp"
+          android:text="@{btName}"
+          android:textSize="@dimen/txtsize_36sp"
+          />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/arrow_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_40dp"
+        android:focusable="false"
+        android:src="@mipmap/icon_arrow_left"
+        android:visibility="gone"
+        />
+
+    <!--<android.support.v17.leanback.widget.HorizontalGridView-->
+    <!--android:id="@+id/list"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/top_bar"-->
+    <!--android:layout_marginBottom="@dimen/dimen_80dp"-->
+    <!--android:layout_marginLeft="@dimen/dimen_100dp"-->
+    <!--android:layout_marginRight="@dimen/dimen_100dp"-->
+    <!--android:layout_marginTop="@dimen/dimen_20dp"-->
+    <!--app:numberOfRows="1"-->
+    <!--/>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginBottom="@dimen/dimen_80dp"
+        android:layout_marginLeft="@dimen/dimen_100dp"
+        android:layout_marginRight="@dimen/dimen_100dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        />
+
+    <ImageView
+        android:id="@+id/arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_40dp"
+        android:focusable="false"
+        android:src="@mipmap/icon_arrow_right"
+        android:visibility="gone"
+        />
+
+    <!--<com.utstar.appstoreapplication.activity.commons.widget.my_game_detail.MyGameDetailLayout-->
+    <!--android:id="@+id/my_game_detail"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/top_bar"-->
+    <!--android:layout_marginTop="@dimen/dimen_20dp"-->
+    <!--/>-->
+
+  </RelativeLayout>
+</layout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@mipmap/bg_launcher"
+      >
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_400dp"
+        android:layout_marginRight="@dimen/dimen_400dp"
+        android:layout_marginTop="@dimen/dimen_480dp"
+        android:background="@null"
+        android:max="100"
+        android:progress="30"
+        android:progressDrawable="@drawable/hot_update_progressbar"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/pb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_80dp"
+        android:text="平台正在更新，请耐心等待...  0%"
+        android:textColor="#66ffffff"
+        android:textSize="@dimen/txtsize_40sp"
+        android:visibility="gone"
+        />
+
+  </RelativeLayout>
+</layout>

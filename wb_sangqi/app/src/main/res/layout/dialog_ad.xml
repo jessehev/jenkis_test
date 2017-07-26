@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_26dp"
+    >
+  <ImageView
+      android:id="@+id/img"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/bt"
+      android:layout_marginBottom="@dimen/dimen_16dp"
+      android:scaleType="fitXY"
+      />
+
+  <Button
+      android:id="@+id/bt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:background="@drawable/selector_btn_wait_dialog"
+      android:gravity="center"
+      android:paddingBottom="@dimen/dimen_10dp"
+      android:text="下一张"
+      android:textColor="@color/white"
+      android:textSize="@dimen/txtsize_30sp"
+      />
+
+  <TextView
+      android:id="@+id/second"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/hint"
+      android:layout_toLeftOf="@+id/hint"
+      android:text="5S"
+      android:textColor="#5C4A90"
+      android:textSize="@dimen/txtsize_28sp"
+      />
+
+  <TextView
+      android:id="@+id/hint"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginBottom="@dimen/dimen_16dp"
+      android:text="后自动关闭"
+      android:textColor="@color/white"
+      android:textSize="@dimen/txtsize_28sp"
+      />
+
+</RelativeLayout>

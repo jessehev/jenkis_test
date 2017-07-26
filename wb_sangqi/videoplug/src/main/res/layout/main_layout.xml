@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/player_window"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="setDisplay"-->
+        <!--android:textSize="@dimen/text_size_12"-->
+        <!--android:onClick="setDisplay"/>-->
+
+    <!--<Button-->
+        <!--android:layout_marginLeft="@dimen/dimen_200"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="setDataSourceList"-->
+        <!--android:textSize="@dimen/text_size_12"-->
+        <!--android:onClick="setDataSourceList"/>-->
+
+    <!--<Button-->
+        <!--android:textSize="@dimen/text_size_12"-->
+        <!--android:layout_marginLeft="@dimen/dimen_400"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="setDataSource"-->
+        <!--android:onClick="setDataSource"/>-->
+
+    <!--<Button-->
+        <!--android:textSize="@dimen/text_size_12"-->
+        <!--android:layout_marginLeft="@dimen/dimen_600"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="start"-->
+        <!--android:onClick="start"/>-->
+
+    <!--<Button-->
+        <!--android:textSize="@dimen/text_size_12"-->
+        <!--android:layout_marginLeft="@dimen/dimen_800"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="play"-->
+        <!--android:onClick="play"/>-->
+
+    <!--<Button-->
+        <!--android:textSize="@dimen/text_size_12"-->
+        <!--android:layout_marginLeft="@dimen/dimen_1000"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="pause"-->
+        <!--android:onClick="pause"/>-->
+
+    <!--<Button-->
+        <!--android:textSize="@dimen/text_size_12"-->
+        <!--android:layout_marginTop="@dimen/dimen_60"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="getDuration"-->
+        <!--android:onClick="getDuration"/>-->
+
+    <!--<Button-->
+        <!--android:textSize="@dimen/text_size_12"-->
+        <!--android:layout_marginLeft="@dimen/dimen_200"-->
+        <!--android:layout_marginTop="@dimen/dimen_60"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="getCurrentPosition"-->
+        <!--android:onClick="getCurrentPosition"/>-->
+
+    <!--<Button-->
+        <!--android:textSize="@dimen/text_size_12"-->
+        <!--android:layout_marginLeft="@dimen/dimen_400"-->
+        <!--android:layout_marginTop="@dimen/dimen_60"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="seekTo"-->
+        <!--android:onClick="seekTo"/>-->
+
+    <!--<Button-->
+        <!--android:textSize="@dimen/text_size_12"-->
+        <!--android:layout_marginLeft="@dimen/dimen_600"-->
+        <!--android:layout_marginTop="@dimen/dimen_60"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="release"-->
+        <!--android:onClick="release"/>-->
+
+    <!--<Button-->
+        <!--android:textSize="@dimen/text_size_12"-->
+        <!--android:layout_marginLeft="@dimen/dimen_800"-->
+        <!--android:layout_marginTop="@dimen/dimen_60"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="fullScreen"-->
+        <!--android:onClick="fullScreen"/>-->
+
+    <!--<Button-->
+        <!--android:textSize="@dimen/text_size_12"-->
+        <!--android:layout_marginLeft="@dimen/dimen_1000"-->
+        <!--android:layout_marginTop="@dimen/dimen_60"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="exitFullScreen"-->
+        <!--android:onClick="exitFullScreen"/>-->
+</FrameLayout>

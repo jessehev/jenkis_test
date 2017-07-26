@@ -1,0 +1,55 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="page-view-size" content="1280*720">
+    <title>测试</title>
+	<script>
+
+		function clickFunction0(){
+
+			var key_code = event.which || event.keyCode;
+			alert(key_code);
+			
+		}
+		
+		function clickFunction1(){
+			
+			alert("clickFunction1");
+			
+		}
+		
+		function clickFunction2(){
+			
+			alert("clickFunction2");
+			
+		}
+		
+		function clickFunction3(){
+			
+			window.location.href = "http://www.baidu.com";
+			
+		}
+
+		function keyDown(event){
+
+			var key = event.which || event.keyCode;
+			alert(key);
+
+		}
+
+		window.onload = function(){
+
+			document.onkeydown = keyDown;
+
+		}
+
+	</script>
+</head>
+<body>
+
+	<button onclick="clickFunction0()">button0</button>
+	<button onclick="clickFunction1()">button1</button>
+	<button onclick="clickFunction2()">button2</button>
+	<button onclick="clickFunction3()">button3</button>
+
+</body>

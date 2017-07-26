@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:orientation="vertical"
+
+    >
+  <include
+      layout="@layout/layout_horizontalview"
+      android:id="@+id/layout_1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dimen_23dp"
+      />
+  <include
+      layout="@layout/layout_horizontalview"
+      android:id="@+id/layout_2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dimen_23dp"
+      android:layout_toRightOf="@+id/layout_1"
+      />
+  <include
+      layout="@layout/layout_horizontalview"
+      android:id="@+id/layout_3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dimen_23dp"
+      android:layout_toRightOf="@+id/layout_2"
+      />
+  <include
+      layout="@layout/layout_horizontalview"
+      android:id="@+id/layout_4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dimen_23dp"
+      android:layout_toRightOf="@+id/layout_3"
+
+      />
+
+  <include
+      layout="@layout/layout_horizontalview"
+      android:id="@+id/layout_5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/layout_1"
+      android:layout_margin="@dimen/dimen_23dp"
+      android:focusable="true"
+
+      />
+  <include
+      layout="@layout/layout_horizontalview"
+      android:id="@+id/layout_6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/layout_1"
+      android:layout_margin="@dimen/dimen_23dp"
+      android:layout_toRightOf="@+id/layout_5"
+
+      />
+  <include
+      layout="@layout/layout_horizontalview"
+      android:id="@+id/layout_7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/layout_1"
+      android:layout_margin="@dimen/dimen_23dp"
+      android:layout_toRightOf="@+id/layout_6"
+
+      />
+  <include
+      layout="@layout/layout_horizontalview"
+      android:id="@+id/layout_8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/layout_1"
+      android:layout_margin="@dimen/dimen_23dp"
+      android:layout_toRightOf="@+id/layout_7"
+      />
+</RelativeLayout>

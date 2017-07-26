@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="tabs">
+    <item>热门推荐</item>
+    <item>精品专区</item>
+    <item>游戏大厅</item>
+    <!--<item>游戏视频</item>-->
+    <item>搜索</item>
+    <item>系统</item>
+  </string-array>
+
+  <string name="game_detail">
+    {
+        "desc": "由25年丰富早教经验的优质幼儿教育机构——“黄金教育集团”权威出品。可爱卡通风格，有趣游戏动画，简洁操作方式，贴心语音提示及活泼音乐。 游戏目的： 1、综合比较长短、高矮、胖瘦、粗细、宽窄、大小、多少。 2、训练观察能力。 游戏操作简介： 小呆和小动物们在森林里开办了一个森林马戏团，他们正在表演精彩节目。你也来看看吧！听清楚问题，选择正确的小动物吧！",
+        "productmode": 3,
+        "tag": 0,
+        "productstar": 8,
+        "packagename": "air.com.A1248e.ForestCircus",
+        "ispraise": 0,
+        "ishave": 0,
+        "downnum": 197955,
+        "type": 1,
+        "isAddPackage": "false",
+        "price": 0,
+        "hottag": 2,
+        "apkuri": "http://192.168.5.156/uploadServer/upload/apk/HuLianWangGongXiangZiYuan/SenLinMaXiTuan/air.com.A1248e.ForestCircus-1000000-v1.0.0.false.apk",
+        "providername": "互联网共享资源",
+        "productid": 375,
+        "md5": "0ffbd79d026ef520b3b3c4f18830f348",
+        "imageuri": "http://192.168.5.157:8080/uploadServer/upload/pic/HuLianWangGongXiangZiYuan/SenLinMaXiTuan/SLMXT_COVER_490x368.png",
+        "praise": 1266,
+        "DOWNNUM": 197955,
+        "apksize": "14.88",
+        "producttype": "亲子互动",
+        "productname": "森林马戏团",
+        "screenshotlist": [
+            {
+                "imageuri": "http://192.168.5.157:8080/uploadServer/upload/pic/HuLianWangGongXiangZiYuan/SenLinMaXiTuan/SLMXT_SCREEN_1196x674_1.png"
+            },
+            {
+                "imageuri": "http://192.168.5.157:8080/uploadServer/upload/pic/HuLianWangGongXiangZiYuan/SenLinMaXiTuan/SLMXT_SCREEN_1196x674_2.png"
+            },
+            {
+                "imageuri": "http://192.168.5.157:8080/uploadServer/upload/pic/HuLianWangGongXiangZiYuan/SenLinMaXiTuan/SLMXT_SCREEN_1196x674_3.png"
+            },
+            {
+                "imageuri": "http://192.168.5.157:8080/uploadServer/upload/pic/HuLianWangGongXiangZiYuan/SenLinMaXiTuan/SLMXT_SCREEN_1196x674_4.png"
+            },
+            {
+                "imageuri": "http://192.168.5.157:8080/uploadServer/upload/pic/HuLianWangGongXiangZiYuan/SenLinMaXiTuan/SLMXT_SCREEN_1196x674_5.png"
+            }
+        ],
+        "relationlist": [
+            {
+                "isAddPackage": false,
+                "imageuri": "http://192.168.5.157:8080/uploadServer/upload/pic/ShangHaiShengJian/XinFenNuDeXiaoNiao/XFNDXN_ICON_190x190.png",
+                "productid": 388,
+                "productname": "新愤怒的小鸟"
+            },
+            {
+                "isAddPackage": false,
+                "imageuri": "http://192.168.5.157:8080/uploadServer/upload/pic/ShangHaiShengJian/SaiErHaoGuiLai/SEHGL_ICON_190x190.png",
+                "productid": 390,
+                "productname": "赛尔号归来"
+            },
+            {
+                "isAddPackage": false,
+                "imageuri": "http://192.168.5.157:8080/uploadServer/upload/pic/ShangHaiShengJian/XinDaTouErZi/XDTEZ_ICON_190x190.png",
+                "productid": 391,
+                "productname": "新大头儿子"
+            },
+            {
+                "isAddPackage": false,
+                "imageuri": "http://192.168.5.157:8080/uploadServer/upload/pic/ShangHaiTengMuWangLuo/LuoKeRenZhe/LKRZ_ICON_190x190.png",
+                "productid": 389,
+                "productname": "洛克忍者"
+            },
+            {
+                "isAddPackage": true,
+                "packageId": "3",
+                "imageuri": "http://192.168.5.157:8080/uploadServer/upload/pic/ChengDuJiaYuHuDongKeJiYouXianGongSi/WuZiQi/WZQ_ICON_190x190.png",
+                "productid": 386,
+                "productname": "五子棋"
+            }
+        ],
+        "oldproductlist": [ ]
+    }
+  </string>
+
+  <!--包月专区-->
+  <string name="package_area">[
+    {
+        "type": 2,
+        "row": 0,
+        "normalItemData": {
+            "id": "1",
+            "title": "WE游戏",
+            "img": "http://172.18.104.14:3080/uploadServer/upload/pic/ShenChouXinZhongWan/SuoNiKeDiYiZhangHeBei/SNKDYZ_COVER_490x368.png",
+            "floorimg": ""
+        }
+    },
+    {
+        "type": 1,
+        "row": 1,
+        "normalItemData": {
+            "id": "2",
+            "title": "套餐包1",
+            "img": "http://172.18.104.14:3080/uploadServer/upload/pic/BeiJingZhongXun/QJiangSanGuoYanYiHeBei/QJSGYY_COVER_490x368.png",
+            "floorimg": ""
+        }
+    },
+    {
+        "type": 2,
+        "row": 0,
+        "normalItemData": {
+            "id": "3",
+            "title": "套餐包2",
+            "img": "http://172.18.104.14:3080/uploadServer/upload/pic/YongLeShengShi/MengJiangXiYouHeBei/MJXY_COVER_490x368.png",
+            "floorimg": ""
+        }
+    },
+    {
+        "type": 0,
+        "row": 1,
+        "normalItemData": {
+            "id": "4",
+            "title": "套餐包3",
+            "img": "http://172.18.104.14:3080/uploadServer/upload/pic/YongLeShengShi/MengShouShiJieHeBei/MSSJ_COVER_490x368.png",
+            "floorimg": ""
+        }
+    },
+    {
+        "type": 0,
+        "row": 1,
+        "normalItemData": {
+            "id": "1",
+            "title": "套餐包4",
+            "img": "http://172.18.104.14:3080/uploadServer/upload/pic/WuHanShouMeng/ShuGongSanGuoHeBei/SGSG_COVER_490x368.png",
+            "floorimg": ""
+        }
+    }
+]</string>
+
+</resources>

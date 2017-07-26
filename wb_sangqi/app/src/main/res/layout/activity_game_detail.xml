@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <data>
+    <import type="android.view.View"/>
+    <!--<import type=""/>-->
+
+    <variable
+        name="gameDetail"
+        type="com.utstar.appstoreapplication.activity.entity.net_entity.GameDetailEntity"
+        />
+    <variable
+        name="apkSize"
+        type="String"
+        />
+
+    <variable
+        name="downloadNum"
+        type="CharSequence"
+        />
+
+    <variable
+        name="showSb"
+        type="boolean"
+        />
+
+    <variable
+        name="showYkq"
+        type="boolean"
+        />
+
+    <variable
+        name="downloadBtText"
+        type="String"
+        />
+
+    <variable
+        name="speed"
+        type="String"
+        />
+
+  </data>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal"
+      >
+
+    <RelativeLayout
+        android:id="@+id/game_content"
+        android:layout_width="@dimen/dimen_649dp"
+        android:layout_height="match_parent"
+        android:background="#80362274"
+        android:clipChildren="false"
+        >
+
+      <ImageView
+          android:id="@+id/game_icon"
+          android:layout_width="@dimen/dimen_490dp"
+          android:layout_height="@dimen/dimen_368dp"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="@dimen/dimen_80dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/bg_default"
+          />
+
+      <TextView
+          android:id="@+id/game_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/game_icon"
+          android:layout_alignRight="@+id/game_icon"
+          android:layout_below="@+id/game_icon"
+          android:layout_marginTop="@dimen/dimen_20dp"
+          android:text="@{gameDetail.gameName}"
+          android:textColor="#fafafa"
+          android:textSize="@dimen/detail_mid_game_title_textsize"
+          android:textStyle="bold"
+          />
+
+      <RatingBar
+          android:id="@+id/star_bar"
+          android:layout_alignLeft="@+id/game_icon"
+          android:layout_below="@+id/game_title"
+          android:layout_marginTop="@dimen/dimen_10dp"
+          android:isIndicator="true"
+          android:max="10"
+          android:numStars="5"
+          android:progress="55"
+          style="@style/gameDetailRatingBar"
+          />
+
+      <TextView
+          android:id="@+id/star_num"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/star_bar"
+          android:layout_marginLeft="@dimen/dimen_13dp"
+          android:layout_toRightOf="@+id/star_bar"
+          android:text='@{"(" + gameDetail.starNum + ")"}'
+          android:textSize="@dimen/txtsize_25sp"
+          />
+
+      <TextView
+          android:id="@+id/download_num"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/star_bar"
+          android:layout_alignRight="@id/game_icon"
+          android:layout_marginLeft="@dimen/dimen_13dp"
+          android:layout_toRightOf="@+id/star_num"
+          android:gravity="right"
+          android:text="@{downloadNum}"
+          android:textColor="@color/white"
+          android:textSize="@dimen/txtsize_28sp"
+          />
+
+      <TextView
+          android:id="@+id/game_size"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/game_icon"
+          android:layout_below="@+id/star_bar"
+          android:layout_marginTop="@dimen/dimen_20dp"
+          android:text="@{apkSize}"
+          android:textColor="@color/white"
+          android:textSize="@dimen/txtsize_28sp"
+          />
+
+      <TextView
+          android:maxLength="8"
+          android:id="@+id/game_type"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/game_size"
+          android:layout_alignRight="@+id/game_icon"
+          android:layout_marginLeft="@dimen/dimen_16dp"
+          android:ellipsize="end"
+          android:maxLines="1"
+          android:text="@{@string/game_detail_type + gameDetail.gameType}"
+          android:textColor="@color/white"
+          android:textSize="@dimen/txtsize_28sp"
+          />
+
+      <RelativeLayout
+          android:id="@+id/llOp"
+          android:layout_width="fill_parent"
+          android:layout_height="@dimen/dimen_57dp"
+          android:layout_alignLeft="@+id/game_icon"
+          android:layout_alignRight="@+id/game_icon"
+          android:layout_below="@+id/game_size"
+          android:layout_marginBottom="@dimen/dimen_8dp"
+          android:layout_marginTop="@dimen/dimen_8dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          >
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="建议操作模式："
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_28sp"
+            />
+
+        <ImageView
+            android:id="@+id/sb"
+            android:layout_width="@dimen/dimen_42dp"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/hint"
+            android:src="@mipmap/bg_controller_y"
+            android:visibility="@{showSb ? View.VISIBLE : View.GONE}"
+            />
+
+        <ImageView
+            android:id="@+id/ykq"
+            android:layout_width="@dimen/dimen_42dp"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_toRightOf="@+id/sb"
+            android:src="@mipmap/icon_remote_y"
+            android:visibility="@{showYkq ? View.VISIBLE : View.GONE}"
+            />
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/download_rl"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/game_icon"
+          android:layout_alignRight="@id/game_icon"
+          android:layout_below="@+id/llOp"
+          android:layout_marginBottom="@dimen/dimen_8dp"
+          android:layout_marginTop="@dimen/dimen_8dp"
+          android:clipChildren="false"
+          android:orientation="horizontal"
+          >
+
+        <ImageView
+            android:id="@+id/zan"
+            android:layout_width="@dimen/dimen_70dp"
+            android:layout_height="@dimen/dimen_70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:background="@drawable/selector_btn_zan"
+            android:focusable="true"
+            android:nextFocusRight="@+id/screenshot_list"
+            android:nextFocusUp="@id/screenshot_list"
+            android:padding="@dimen/dimen_16dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_zan"
+            />
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_70dp"
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:layout_toLeftOf="@+id/zan"
+            android:background="@drawable/selector_detail_btn_del"
+            android:text="卸载"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_30sp"
+            android:visibility="gone"
+            />
+
+        <FrameLayout
+            android:id="@+id/frame_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:layout_toLeftOf="@+id/del"
+            android:focusable="true"
+            >
+
+          <!--android:background="@drawable/bg_progress_download"-->
+          <ProgressBar
+              android:id="@+id/download_pb"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_70dp"
+              android:background="@mipmap/bg_download_normal"
+              android:max="100"
+              android:progress="0"
+              android:progressDrawable="@drawable/progress_selector"
+              style="?android:attr/progressBarStyleHorizontal"
+              />
+
+          <Button
+              android:id="@+id/download_bt"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_70dp"
+              android:layout_gravity="center"
+              android:background="@drawable/selector_detail_btn_download"
+              android:duplicateParentState="true"
+              android:focusable="false"
+              android:gravity="center"
+              android:text="@{downloadBtText}"
+              android:textColor="@color/white"
+              android:textSize="@dimen/txtsize_30sp"
+              android:textStyle="bold"
+              />
+
+          <TextView
+              android:id="@+id/percent"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_70dp"
+              android:gravity="center"
+              android:textColor="@color/white"
+              android:textSize="@dimen/txtsize_32sp"
+              android:visibility="gone"
+              />
+
+          <!--android:nextFocusDown="@+id/zan"-->
+          <!--android:nextFocusUp="@+id/zan"-->
+        </FrameLayout>
+
+      </RelativeLayout>
+
+      <TextView
+          android:id="@+id/desc"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/game_icon"
+          android:layout_alignRight="@id/game_icon"
+          android:layout_below="@+id/download_rl"
+          android:layout_marginTop="@dimen/dimen_20dp"
+          android:ellipsize="end"
+          android:gravity="center|top|left"
+          android:lineSpacingMultiplier="1.1"
+          android:lines="5"
+          android:maxLines="5"
+          android:text="@{gameDetail.desc}"
+          android:textColor="@color/white"
+          android:textSize="@dimen/txtsize_25sp"
+          />
+      <TextView
+          android:text="@{speed}"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/game_icon"
+          android:layout_alignStart="@+id/game_icon"
+          android:layout_marginBottom="57dp"
+          />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/dimen_5dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/game_content"
+        android:background="@mipmap/bg_game_detail_line"
+        />
+
+    <!--android:layout_marginLeft="@dimen/dimen_80dp"-->
+    <!--android:layout_marginRight="@dimen/dimen_80dp"-->
+    <android.support.v17.leanback.widget.VerticalGridView
+        android:id="@+id/screenshot_list"
+        android:layout_width="@dimen/dimen_900dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/game_content"
+        android:nextFocusRight="@+id/guess_list"
+        android:paddingBottom="@dimen/dimen_20dp"
+        android:paddingTop="@dimen/dimen_20dp"
+        app:numberOfColumns="1"
+        />
+    <!--app:verticalMargin="@dimen/dimen_15dp"-->
+
+    <TextView
+        android:id="@+id/guess_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/screenshot_list"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="猜\n你\n喜\n欢\n"
+        android:textColor="#A79ECC"
+        android:textSize="@dimen/detail_mid_game_type_textsize"
+        />
+
+    <android.support.v17.leanback.widget.VerticalGridView
+        android:id="@+id/guess_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/guess_text"
+        android:background="@mipmap/bg_game_detail_guess"
+        android:clipChildren="false"
+        android:nextFocusLeft="@+id/screenshot_list"
+        android:nextFocusRight="@+id/lvRelationImages"
+        android:paddingBottom="@dimen/dimen_60dp"
+        android:paddingLeft="@dimen/dimen_60dp"
+        android:paddingTop="@dimen/dimen_60dp"
+        android:scrollbars="none"
+        app:numberOfColumns="1"
+        />
+
+    <!--<RelativeLayout-->
+    <!--android:paddingTop="@dimen/dimen_80dp"-->
+    <!--android:id="@+id/lvRelationImages_ll"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--android:layout_toRightOf="@+id/guess_text"-->
+    <!--android:background="@mipmap/bg_game_detail_guess"-->
+    <!--android:focusable="false"-->
+    <!--android:focusableInTouchMode="false"-->
+    <!--android:padding="@dimen/dimen_10dp"-->
+    <!--&gt;-->
+
+    <!--<android.support.v17.leanback.widget.VerticalGridView-->
+    <!--android:id="@+id/guess_list"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:nextFocusLeft="@+id/screenshot_list"-->
+    <!--android:nextFocusRight="@+id/lvRelationImages"-->
+    <!--android:scrollbars="none"-->
+    <!--app:numberOfColumns="1"-->
+    <!--app:verticalMargin="@dimen/dimen_25dp"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+
+  </RelativeLayout>
+</layout>

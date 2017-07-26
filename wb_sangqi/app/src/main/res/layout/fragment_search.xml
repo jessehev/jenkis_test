@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:paddingBottom="@dimen/dimen_80dp"
+      android:paddingLeft="@dimen/dimen_100dp"
+      android:paddingRight="@dimen/dimen_100dp"
+      android:paddingTop="@dimen/dimen_20dp"
+      >
+
+    <LinearLayout
+        android:id="@+id/key_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_search_base_view"
+        android:orientation="vertical"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dimen_30dp"
+          android:paddingLeft="@dimen/dimen_80dp"
+          android:paddingRight="@dimen/dimen_80dp"
+          android:text="支持“拼音首字母”搜索"
+          android:textSize="@dimen/txtsize_30sp"
+          android:textStyle="bold"
+          />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="@dimen/dimen_30dp"
+          android:layout_marginRight="@dimen/dimen_30dp"
+          android:layout_marginTop="@dimen/dimen_40dp"
+          android:background="#66000000"
+          />
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="@dimen/dimen_30dp"
+          android:layout_marginRight="@dimen/dimen_30dp"
+          android:background="#7963a3"
+          />
+
+      <EditText
+          android:id="@+id/search_et"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/dimen_30dp"
+          android:layout_marginRight="@dimen/dimen_30dp"
+          android:layout_marginTop="@dimen/dimen_20dp"
+          android:background="@drawable/bg_search_ed_view"
+          android:drawablePadding="@dimen/dimen_20dp"
+          android:enabled="false"
+          android:focusable="false"
+          android:gravity="right|center"
+          android:padding="@dimen/dimen_15dp"
+          android:textColor="#f8f8f8"
+          />
+
+      <android.support.v17.leanback.widget.VerticalGridView
+          android:id="@+id/search_key"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/dimen_30dp"
+          android:layout_marginRight="@dimen/dimen_30dp"
+          android:layout_marginTop="@dimen/dimen_30dp"
+          app:horizontalMargin="@dimen/dimen_25dp"
+          app:numberOfColumns="3"
+          app:verticalMargin="@dimen/dimen_25dp"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/key_content"
+        android:layout_alignTop="@+id/key_content"
+        android:layout_marginLeft="@dimen/dimen_40dp"
+        android:layout_toRightOf="@+id/key_content"
+        android:background="@drawable/bg_search_base_view"
+        android:orientation="vertical"
+        >
+
+      <TextView
+          android:id="@+id/result_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dimen_30dp"
+          android:paddingLeft="@dimen/dimen_50dp"
+          android:paddingRight="@dimen/dimen_50dp"
+          android:text="猜你喜欢"
+          android:textColor="#b3add5"
+          android:textSize="@dimen/txtsize_45sp"
+          />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="@dimen/dimen_50dp"
+          android:layout_marginRight="@dimen/dimen_50dp"
+          android:layout_marginTop="@dimen/dimen_30dp"
+          android:background="#7963a3"
+          />
+
+      <android.support.v17.leanback.widget.VerticalGridView
+          android:id="@+id/search_result"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="@dimen/dimen_16dp"
+          android:paddingBottom="@dimen/dimen_16dp"
+          android:layout_marginLeft="@dimen/dimen_50dp"
+          android:layout_marginRight="@dimen/dimen_50dp"
+          android:clipChildren="false"
+          app:horizontalMargin="@dimen/dimen_25dp"
+          app:numberOfColumns="6"
+          />
+      <!--app:verticalMargin="@dimen/dimen_25dp"-->
+
+    </LinearLayout>
+
+  </RelativeLayout>
+</layout>

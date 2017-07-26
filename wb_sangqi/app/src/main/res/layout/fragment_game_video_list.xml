@@ -1,0 +1,21 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+    <android.support.v17.leanback.widget.VerticalGridView
+        android:id="@+id/vgv_rank_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/dimen_30dp"
+        android:paddingLeft="@dimen/dimen_48dp"
+        android:paddingRight="@dimen/dimen_20dp"
+        android:paddingTop="@dimen/dimen_35dp"
+        app:numberOfColumns="4"
+        />
+  </RelativeLayout>
+</layout>

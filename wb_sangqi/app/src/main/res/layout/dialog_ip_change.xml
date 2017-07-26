@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <data>
+    <variable
+        name="currentIp"
+        type="String"
+        />
+    <variable
+        name="versionInfo"
+        type="String"
+        />
+  </data>
+
+  <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@android:color/white"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_20dp"
+        android:text="设置IP"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/txtsize_40sp"
+        />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title"
+        android:background="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/version_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_20dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:text="@{versionInfo}"
+        android:textColor="@android:color/background_dark"
+        />
+
+    <TextView
+        android:id="@+id/current_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version_info"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_20dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:text="@{currentIp}"
+        android:textColor="@android:color/background_dark"
+        />
+
+
+    <!--<android.support.v17.leanback.widget.VerticalGridView-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_ip"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="true"
+        />
+    <!--app:numberOfColumns="1"-->
+
+  </RelativeLayout>
+</layout>

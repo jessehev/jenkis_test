@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_150dp"
+    android:layout_height="@dimen/dimen_150dp"
+    >
+  <TextView
+      android:id="@+id/left"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      style="@style/SearchKeyPopItem"
+      />
+
+  <TextView
+      android:id="@+id/center"
+      android:layout_centerVertical="true"
+      android:layout_toRightOf="@+id/left"
+      style="@style/SearchKeyPopItem"
+      />
+
+  <TextView
+      android:id="@+id/right"
+      android:layout_centerVertical="true"
+      android:layout_toRightOf="@+id/center"
+      style="@style/SearchKeyPopItem"
+      />
+
+  <TextView
+      android:id="@+id/top"
+      android:layout_alignParentTop="true"
+      android:layout_toRightOf="@+id/left"
+      style="@style/SearchKeyPopItem"
+      />
+
+  <TextView
+      android:id="@+id/bottom"
+      android:layout_below="@+id/center"
+      android:layout_toRightOf="@+id/left"
+      style="@style/SearchKeyPopItem"
+      />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/bg_search_key_pop"
+      android:duplicateParentState="true"
+      />
+
+</RelativeLayout>
